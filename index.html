@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Weather Application</title>
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+<div class="city-list">
+        <div class="city-single copenhagen">
+                <div class="city-title"></div><span><img src="" alt="" class="sky-icon"></span>
+                <div class="city-temp"></div>
+                <div class="city-humidity"></div>
+            </div>    
+            <div class="city-single new-york">
+                <div class="city-title"></div><span><img src="" alt="" class="sky-icon"></span>
+                <div class="city-temp"></div>
+                <div class="city-humidity"></div>
+            </div>    
+            <div class="city-single berlin">
+                <div class="city-title"></div><span><img src="" alt="" class="sky-icon"></span>
+                <div class="city-temp"></div>
+                <div class="city-humidity"></div>
+            </div>    
+            <div class="city-single budapest">
+                <div class="city-title"></div><span><img src="" alt="" class="sky-icon"></span>
+                <div class="city-temp"></div>
+                <div class="city-humidity"></div>
+            </div>    
+            <div class="city-single sofia">
+                <div class="city-title"></div><span><img src="" alt="" class="sky-icon"></span>
+                <div class="city-temp"></div>
+                <div class="city-humidity"></div>
+            </div>    
+            <div class="city-single melbourne">
+                <div class="city-title"></div><span><img src="" alt="" class="sky-icon"></span>
+                <div class="city-temp"></div>
+                <div class="city-humidity"></div>
+            </div>
+            <div class="saveCity">
+            </div>  
+</div>  
+
+<div class="container">
+  <header class="header">
+    <div class="search">
+      <input type="text" placeholder="Enter City Name" class="search-txt" id="inputString">
+      <a class="search-btn"><i class="fas fa-search"></i></a>
+
+      <span class="storageFunc" onclick="clearStorage()">Clear</span>
+      <span class="storageFunc" onclick="saveStatusLocally()">Store</span>
+      <span class="storageFunc" onclick="readStatus()">Print</span>
+      <div id="write"></div>
+    </div>
+  </header>
+
+  <main class="main">
+    
+    <div class="city-icon">
+      <div class="city-icon-holder">
+      <div class="city-name nameSave"></div>
+      <img src="" alt="" class="icon">
+        </div>
+    </div>
+    
+    <div class="temperature">
+      <div class="temp tempSave"></div>
+    </div>
+    
+    <div class="humidity">
+      <div class="humidity-div humiditySave"></div>
+    </div>
+    
+  </main>
+  
+</div>
+
+  <script src='https://use.fontawesome.com/releases/v5.0.13/js/all.js'></script>
+
+    <script  src="js/index.js"></script>
+
+
+
+</body>
+
+</html>
